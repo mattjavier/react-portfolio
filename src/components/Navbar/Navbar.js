@@ -26,12 +26,15 @@ const useStyles = makeStyles((theme) => ({
   },
   linkText: {
     color: '#3097a5',
+    '&:hover': {
+      color: '#f55457'
+    }
   },
   appBar: {
     background: '#1a1a1a',
   },
   list: {
-    background: '#1a1a1a'
+    width: 250
   }
 }))
 
@@ -68,20 +71,35 @@ const Navbar = () => {
             open={openState.open}
             onClose={toggleDrawer(false)}
           >
-            <List>
+            <List className={classes.list}>
               <ListItem>
                 <Link to="/" className={classes.link}>
-                  <Button className={classes.linkText}>Home</Button>
+                  <Button 
+                    className={classes.linkText}
+                    onClick={toggleDrawer(false)}
+                  >
+                    Home
+                  </Button>
                 </Link>
               </ListItem>
               <ListItem>
                 <Link to="/portfolio" className={classes.link}>
-                  <Button className={classes.linkText}>Portfolio</Button>
+                  <Button 
+                    className={classes.linkText}
+                    onClick={toggleDrawer(false)}
+                  >
+                    Portfolio
+                  </Button>
                 </Link>
               </ListItem>
               <ListItem>
                 <Link to="/contact" className={classes.link}>
-                  <Button className={classes.linkText}>Contact</Button>
+                  <Button 
+                    className={classes.linkText}
+                    onClick={toggleDrawer(false)}
+                  >
+                    Contact
+                  </Button>
                 </Link>
               </ListItem>
             </List>
