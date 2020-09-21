@@ -16,7 +16,7 @@ const dark = createMuiTheme({
     },
     text: {
       primary: '#ffffff'
-    }
+    },
   }
 })
 

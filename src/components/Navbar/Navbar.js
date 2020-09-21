@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
   },
   list: {
     width: 250
+  },
+  drawerPaper: {
+    backgroundColor: '#1a1a1a'
   }
 }))
 
@@ -71,6 +74,7 @@ const Navbar = () => {
             anchor="left"
             open={openState.open}
             onClose={toggleDrawer(false)}
+            classes={{ paper: classes.drawerPaper }}
           >
             <List className={classes.list}>
               <ListItem>
