@@ -1,8 +1,13 @@
 import React from 'react'
 
+import Container from '@material-ui/core/Container'
+
 const About = () => {
   return (
-    <p>Matthew Javier, developer.</p>
+    <Container maxWidth="md">
+
+      <p>Matthew Javier, developer.</p>
+    </Container>
   )
 }
 

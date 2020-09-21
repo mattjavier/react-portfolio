@@ -52,7 +52,7 @@ const Footer = () => {
     <AppBar className={classes.footer}>
       <Toolbar>
         <Typography variant="overline">
-          &copy; Matthew Javier
+          &copy; Matthew Javier 2020
         </Typography>
         <div className={classes.grow} />
         <IconButton aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick} edge="end" color="inherit">

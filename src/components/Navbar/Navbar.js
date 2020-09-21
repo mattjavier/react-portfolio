@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from '@material-ui/core/Drawer'
+import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -78,7 +79,9 @@ const Navbar = () => {
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
                   >
-                    Home
+                    <Typography variant="h6">
+                      Home
+                    </Typography>
                   </Button>
                 </Link>
               </ListItem>
@@ -88,7 +91,9 @@ const Navbar = () => {
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
                   >
-                    Portfolio
+                    <Typography variant="h6">
+                      Portfolio
+                    </Typography>
                   </Button>
                 </Link>
               </ListItem>
@@ -98,7 +103,9 @@ const Navbar = () => {
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
                   >
-                    Contact
+                    <Typography variant="h6">
+                      Contact
+                    </Typography>
                   </Button>
                 </Link>
               </ListItem>
