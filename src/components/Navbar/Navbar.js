@@ -29,7 +29,11 @@ const useStyles = makeStyles((theme) => ({
     color: '#3097a5',
     '&:hover': {
       color: '#f55457'
-    }
+    },
+  },
+  typography: {
+    letterSpacing: 3,
+    fontWeight: 200
   },
   appBar: {
     background: '#1a1a1a',
@@ -83,7 +87,10 @@ const Navbar = () => {
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
                   >
-                    <Typography variant="h6">
+                    <Typography 
+                      variant="h6"
+                      className={classes.typography}
+                    >
                       Home
                     </Typography>
                   </Button>
@@ -95,7 +102,10 @@ const Navbar = () => {
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
                   >
-                    <Typography variant="h6">
+                    <Typography 
+                      variant="h6"
+                      className={classes.typography}
+                    >
                       Portfolio
                     </Typography>
                   </Button>
@@ -107,7 +117,10 @@ const Navbar = () => {
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
                   >
-                    <Typography variant="h6">
+                    <Typography 
+                      variant="h6"
+                      className={classes.typography}
+                    >
                       Contact
                     </Typography>
                   </Button>
