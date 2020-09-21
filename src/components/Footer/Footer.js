@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 50,
   },
   footer: {
-    background: 'linear-gradient(45deg, #1cb5e0 30%, #000046 90%)',
+    background: '#1a1a1a',
     top: 'auto',
     bottom: 0,
   },
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   link: {
-    color: '#000046',
+    color: '#3097a5',
     textDecoration: 'none',
   },
 }))
@@ -69,7 +69,8 @@ const Footer = () => {
           <MenuItem onClick={handleClose} >
             <a
               className={classes.link} 
-              href="https://linkedin.com/in/mattjavier7" target="_blank">
+              href="https://linkedin.com/in/mattjavier7" target="_blank"
+              rel="nopener noreferrer">
               <LinkedInIcon />
             </a>
           </MenuItem>
@@ -77,7 +78,8 @@ const Footer = () => {
             <a
               className={classes.link} 
               href="https://github.com/mattjavier" 
-              target="_blank">
+              target="_blank"
+              rel="nopener noreferrer">
               <GitHubIcon />
             </a>
           </MenuItem>

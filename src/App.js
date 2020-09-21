@@ -1,10 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
           <Link to="/contact">Contact</Link>
         </nav> */}
         <CssBaseline />
-        
+        <Navbar />
         <Switch>
           <Route exact path="/" component={About} />
           <Route path="/portfolio" component={Portfolio} />
