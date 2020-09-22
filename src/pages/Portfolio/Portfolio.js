@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography'
 import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardActions from '@material-ui/core/CardActions'
-import CardActionArea from '@material-ui/core/CardActionArea'
+
 
 import coviewImg from '../../images/coview/coview-home.png'
 import sensifyImg from '../../images/sensify/sensify1.png'
