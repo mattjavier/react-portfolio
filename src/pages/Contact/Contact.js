@@ -24,6 +24,7 @@ const Contact = () => {
       justify="space-around"
       alignItems="center"
       className={classes.root}
+      spacing={5}
     >
       <Typography 
         variant="h2"

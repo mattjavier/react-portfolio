@@ -11,11 +11,14 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 30,
+    paddingLeft: 10,
+    paddingRight: 10
   },
   contact: {
-    margin: theme.spacing(1),
+    padding: 10,
     color: '#3097a5',
-    letterSpacing: 2
+    letterSpacing: 2,
+    textAlign: 'center'
   },
   margin: {
     margin: theme.spacing(1),
@@ -46,12 +49,11 @@ const Form = () => {
       alignItems="center"
       className={classes.root}
     >
-      <Typography 
-        className={classes.contact}
-        align="center"
-      >
-        Connect with me on LinkedIn and GitHub below.
-      </Typography>
+      <div className={classes.contact}>
+        <p className={classes.contact}>
+          Connect with me on LinkedIn and GitHub below.
+        </p>
+      </div>
       <div>
         <Fab 
           variant="round"
