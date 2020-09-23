@@ -127,6 +127,7 @@ const Portfolio = () => {
       
       <Grid
         container
+        className={classes.projects}
         direction="row"
         justify="space-around"
         alignItems="center"
@@ -156,6 +157,7 @@ const Portfolio = () => {
       
       <Grid
         container
+        className={classes.projects}
         direction="row"
         justify="space-around"
         alignItems="center"
