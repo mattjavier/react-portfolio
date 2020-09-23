@@ -11,6 +11,7 @@ import CardMedia from '@material-ui/core/CardMedia'
 import CardActions from '@material-ui/core/CardActions'
 import Typography from '@material-ui/core/Typography'
 import Collapse from '@material-ui/core/Collapse'
+import { ReportProblem } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -83,16 +84,20 @@ const Project = props => {
           <Typography paragraph>
             {props.project.text}
           </Typography>
-          <a 
-            href={props.project.deployed}
-            target="_blank"
-            rel="nopener noreferrer"
-            className={classes.link}
-          >
-            <Typography paragraph>
-              View the deployed application
-            </Typography>
-          </a>
+          {
+            props.project.deployed ?
+            <a 
+              href={props.project.deployed}
+              target="_blank"
+              rel="nopener noreferrer"
+              className={classes.link}
+            >
+              <Typography paragraph>
+                View the deployed application
+              </Typography>
+            </a>
+            : null
+          }
           <hr />
           {
             props.project.github ? 

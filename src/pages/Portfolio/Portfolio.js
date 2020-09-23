@@ -9,6 +9,8 @@ import coviewImg from '../../images/coview/coview-home.png'
 import sensifyImg from '../../images/sensify/sensify1.png'
 import codeQuizImg from '../../images/code-quiz/quiz-start.png'
 import tvtImg from '../../images/tvt/tvt.png'
+import burgerImg from '../../images/burger/burger1.png'
+import employeeImg from '../../images/employee/employee1.png'
 
 import Project from '../../components/Project'
 
@@ -57,6 +59,22 @@ const tvt = {
   deployed: 'http://thevintnerstavern.com/',
   github: null,
   text: "The website for The Vintner's Tavern restaurant located in Chino, CA."
+}
+
+const burger = {
+  imageURL: burgerImg,
+  name: 'Eat-Da-Burger',
+  deployed: 'https://mysterious-everglades-88130.herokuapp.com/',
+  github: 'https://github.com/mattjavier/burger',
+  text: 'Eat-Da-Burger, a database web application. Developed with JavaScript, HTML, CSS, Express, MySQL, and Handlebars.'
+}
+
+const employeeTracker = {
+  imageURL: employeeImg,
+  name: 'MySQL Employee Tracker',
+  deployed: null,
+  github: 'https://github.com/mattjavier/employee-tracker',
+  text: 'A CLI program that simulates a Content Management System. Users of this application can perform various queries on an employee SQL database. The application is built using Node.js, the Inquirer npm package, and MySQL.'
 }
 
 const Portfolio = () => {
@@ -133,6 +151,35 @@ const Portfolio = () => {
           sm={6}
           >
           <Project project={tvt} />
+        </Grid>
+      </Grid>
+      
+      <Grid
+        container
+        direction="row"
+        justify="space-around"
+        alignItems="center"
+        spacing={3}
+        >
+        <Grid
+          item
+          container
+          direction="row"
+          justify="center" 
+          xs={12} 
+          sm={6}
+          >
+          <Project project={burger} />
+        </Grid>
+        <Grid
+          item
+          container
+          direction="row"
+          justify="center"
+          xs={12} 
+          sm={6}
+          >
+          <Project project={employeeTracker} />
         </Grid>
       </Grid>
     </Grid>
