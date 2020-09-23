@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
     color: '#3097a5',
     textDecoration: 'none',
   },
+  menuPaper: {
+    backgroundColor: '#1a1a1a'
+  }
 }))
 
 const Footer = () => {
@@ -65,6 +68,7 @@ const Footer = () => {
           open={open}
           onClose={handleClose}
           TransitionComponent={Fade}
+          classes={{ paper: classes.menuPaper }}
         >
           <MenuItem onClick={handleClose} >
             <a

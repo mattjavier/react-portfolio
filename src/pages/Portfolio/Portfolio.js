@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 const coview = {
   imageURL: coviewImg,
-  name: 'Coview-19',
+  name: 'COVIEW-19',
   deployed: 'https://sleepy-forest-03534.herokuapp.com/',
   github: 'https://github.com/mattjavier/coview-19',
   text: 'COVIEW-19 is an application that allows users to review local businesses based on COVID-19 guidelines. Users can search through city, state, business type, or/ and business name. Reviewing a business includes rating the following: mask usage, social distancing, sanitization, overall rating and any comments specific to that business. Reviews will be connected to that business for all users to see.',

@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   expand: {
     color: '#3097a5',
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#202020',
     '&:hover': {
       color: '#f55457'
     },
