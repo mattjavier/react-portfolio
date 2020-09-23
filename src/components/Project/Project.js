@@ -34,8 +34,8 @@ const Project = props => {
     <Card className={classes.card}>
       <CardMedia
         className={classes.image}
-        image={props.imageURL}
-        title={props.name}
+        image={props.project.imageURL}
+        title={props.project.name}
       />
       <CardActions className={classes.cardAction}>
         <Button 

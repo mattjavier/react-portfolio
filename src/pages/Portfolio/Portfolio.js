@@ -3,17 +3,14 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core'
 
 import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
-import Card from '@material-ui/core/Card'
-import CardMedia from '@material-ui/core/CardMedia'
-import CardActions from '@material-ui/core/CardActions'
-
 
 import coviewImg from '../../images/coview/coview-home.png'
 import sensifyImg from '../../images/sensify/sensify1.png'
 import codeQuizImg from '../../images/code-quiz/quiz-start.png'
 import tvtImg from '../../images/tvt/tvt.png'
+
+import Project from '../../components/Project'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,24 +25,39 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 20,
     paddingBottom: 20
   },
-  image: {
-    height: 300,
-    width: 300,
-  },
-  card: {
-    textAlign: 'center',
-  },
-  buttons: {
-    color: '#3097a5',
-    backgroundColor: '#1a1a1a',
-    '&:hover': {
-      color: '#f55457'
-    },
-  },
-  cardAction: {
-    backgroundColor: '#1a1a1a'
-  }
 }))
+
+const coview = {
+  imageURL: coviewImg,
+  name: 'Coview-19',
+  deployed: 'https://sleepy-forest-03534.herokuapp.com/',
+  github: 'https://github.com/mattjavier/coview-19',
+  text: 'COVIEW-19 is an application that allows users to review local businesses based on COVID-19 guidelines. Users can search through city, state, business type, or/ and business name. Reviewing a business includes rating the following: mask usage, social distancing, sanitization, overall rating and any comments specific to that business. Reviews will be connected to that business for all users to see.',
+}
+
+const sensify = {
+  imageURL: sensifyImg,
+  name: 'Sensify',
+  deployed: 'https://daniellehillman.github.io/Sensify/',
+  github: 'https://github.com/daniellehillman/Sensify',
+  text: 'Sensify, a Spotify Web API application. Developed with JavaScript, jQuery, HTML, CSS, and Materialize.'
+}
+
+const codeQuiz = {
+  imageURL: codeQuizImg,
+  name: 'Code Quiz',
+  deployed: 'https://mattjavier.github.io/code-quiz/',
+  github: 'https://github.com/mattjavier/code-quiz',
+  text: 'This a web browser app that tests a user on JavaScript concepts. It is multiple choice and has a time constraint. The user can then enter their initials to the leaderboard and view all high scores.'
+}
+
+const tvt = {
+  imageURL: tvtImg,
+  name: "The Vintner's Tavern",
+  deployed: 'http://thevintnerstavern.com/',
+  github: null,
+  text: "The website for The Vintner's Tavern restaurant located in Chino, CA."
+}
 
 const Portfolio = () => {
   const classes = useStyles()
@@ -81,21 +93,7 @@ const Portfolio = () => {
           xs={12} 
           sm={6} 
         >
-          <Card className={classes.card}>
-            <CardMedia
-              className={classes.image}
-              image={coviewImg}
-              title="Coview-19"
-            />
-            <CardActions className={classes.cardAction}>
-              <Button 
-                size="small" 
-                className={classes.buttons}
-              >
-                Learn More
-              </Button>
-            </CardActions>
-          </Card>
+          <Project project={coview} />
         </Grid>
         <Grid
           item
@@ -105,21 +103,7 @@ const Portfolio = () => {
           xs={12} 
           sm={6}
           >
-          <Card className={classes.card}>
-            <CardMedia
-              className={classes.image}
-              image={sensifyImg}
-              title="Sensify"
-            />
-            <CardActions className={classes.cardAction}>
-              <Button 
-                size="small" 
-                className={classes.buttons}
-              >
-                Learn More
-              </Button>
-            </CardActions>
-          </Card>
+          <Project project={sensify} />
         </Grid>
       </Grid>
       
@@ -138,21 +122,7 @@ const Portfolio = () => {
           xs={12} 
           sm={6}
           >
-          <Card className={classes.card}>
-            <CardMedia
-              className={classes.image}
-              image={codeQuizImg}
-              title="Code Quiz"
-            />
-            <CardActions className={classes.cardAction}>
-              <Button 
-                size="small" 
-                className={classes.buttons}
-              >
-                Learn More
-              </Button>
-            </CardActions>
-          </Card>
+          <Project project={codeQuiz} />
         </Grid>
         <Grid
           item
@@ -162,21 +132,7 @@ const Portfolio = () => {
           xs={12} 
           sm={6}
           >
-          <Card className={classes.card}>
-            <CardMedia
-              className={classes.image}
-              image={tvtImg}
-              title="The Vintner's Tavern"
-            />
-            <CardActions className={classes.cardAction}>
-              <Button 
-                size="small" 
-                className={classes.buttons}
-              >
-                Learn More
-              </Button>
-            </CardActions>
-          </Card>
+          <Project project={tvt} />
         </Grid>
       </Grid>
     </Grid>
