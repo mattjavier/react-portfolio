@@ -10,12 +10,12 @@ Visit [here](https://mattjavier.github.io/react-portfolio/) to view the portfoli
 
 * The home/about page
 
-<img src="./assets/home.png" width="600>
+<img src="./assets/home.png" width="600">
 
 * The project page
 
-<img src="./assets/project.png" width="600>
+<img src="./assets/project.png" width="600">
 
 * The contact page
 
-<img src="./assets/contact.png" width="600>
+<img src="./assets/contact.png" width="600">
