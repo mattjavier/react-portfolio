@@ -6,6 +6,10 @@ It contains a Home/About page, a Projects page, and a Contact page. Each page is
 
 Visit [here](https://mattjavier.github.io/react-portfolio/) to view the portfolio.
 
+## Demo Walkthrough
+
+![Demo Gif](assets/portfolio.gif)
+
 ## Images
 
 * The home/about page
