@@ -5,12 +5,12 @@ import { makeStyles } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 
+import plyrImg from '../../images/plyr2/plyr2.png'
 import coviewImg from '../../images/coview/coview-home.png'
 import sensifyImg from '../../images/sensify/sensify1.png'
 import codeQuizImg from '../../images/code-quiz/quiz-start.png'
 import tvtImg from '../../images/tvt/tvt.png'
 import burgerImg from '../../images/burger/burger1.png'
-import employeeImg from '../../images/employee/employee1.png'
 
 import Project from '../../components/Project'
 
@@ -28,6 +28,14 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 20
   },
 }))
+
+const plyr2 = {
+  imageURL: plyrImg,
+  name: 'plyr 2',
+  deployed: 'https://plyr-2.herokuapp.com/',
+  github: 'https://github.com/mattjavier/plyr-2',
+  test: 'Plyr2 is a social media platform made by gamers for gamers. Gaming has become one of the top means of social interaction, and this application will help gamers connect with each other based on their mutual interests in game titles and genres. Plyr2 allows for a user to personalize their profile with an avatar, highlight video, handles and usernames across all major consoles, favorite game titles, and preferred genres. Using our algorithm, the application then shows you matches to other users that share similar interests as yourself which will then give you the option to add those users as friends. Lastly, there is a global chat feature which can fix the everlasting issue of looking for gamers to play with at any given second. All users logged in will have the option to participate in the global chat which is used to post when a user is looking to either join a lobby or invite others who are available into their own.'
+}
 
 const coview = {
   imageURL: coviewImg,
@@ -69,14 +77,6 @@ const burger = {
   text: 'Eat-Da-Burger, a database web application. Developed with JavaScript, HTML, CSS, Express, MySQL, and Handlebars.'
 }
 
-const employeeTracker = {
-  imageURL: employeeImg,
-  name: 'MySQL Employee Tracker',
-  deployed: null,
-  github: 'https://github.com/mattjavier/employee-tracker',
-  text: 'A CLI program that simulates a Content Management System. Users of this application can perform various queries on an employee SQL database. The application is built using Node.js, the Inquirer npm package, and MySQL.'
-}
-
 const Portfolio = () => {
   const classes = useStyles()
 
@@ -111,8 +111,28 @@ const Portfolio = () => {
           xs={12} 
           sm={6} 
         >
+          <Project project={plyr2} />
+        </Grid>
+        <Grid
+          item
+          container
+          direction="row"
+          justify="center" 
+          xs={12} 
+          sm={6}
+          >
           <Project project={coview} />
         </Grid>
+      </Grid>
+      
+      <Grid
+        container
+        className={classes.projects}
+        direction="row"
+        justify="space-around"
+        alignItems="center"
+        spacing={3}
+        >
         <Grid
           item
           container
@@ -123,36 +143,16 @@ const Portfolio = () => {
           >
           <Project project={sensify} />
         </Grid>
-      </Grid>
-      
-      <Grid
-        container
-        className={classes.projects}
-        direction="row"
-        justify="space-around"
-        alignItems="center"
-        spacing={3}
-        >
         <Grid
           item
           container
           direction="row"
-          justify="center" 
+          justify="center"
           xs={12} 
           sm={6}
           >
           <Project project={codeQuiz} />
         </Grid>
-        <Grid
-          item
-          container
-          direction="row"
-          justify="center"
-          xs={12} 
-          sm={6}
-          >
-          <Project project={tvt} />
-        </Grid>
       </Grid>
       
       <Grid
@@ -171,7 +171,7 @@ const Portfolio = () => {
           xs={12} 
           sm={6}
           >
-          <Project project={burger} />
+          <Project project={tvt} />
         </Grid>
         <Grid
           item
@@ -181,7 +181,7 @@ const Portfolio = () => {
           xs={12} 
           sm={6}
           >
-          <Project project={employeeTracker} />
+          <Project project={burger} />
         </Grid>
       </Grid>
     </Grid>

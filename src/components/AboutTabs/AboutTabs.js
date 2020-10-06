@@ -132,7 +132,7 @@ const AboutTabs = () => {
             Click&nbsp;
             <span> 
               <a
-                href="https://drive.google.com/file/d/1ZtvpxV55eGCVBO_uxuM79O0TA6Y7_WxC/view"
+                href="https://drive.google.com/file/d/1t5EBD31wOHBL8bLZCW9uPdM0iAqSTSOx/view?usp=sharing"
                 target="_blank"
                 rel="nopener noreferrer"
                 className={classes.alternate}
