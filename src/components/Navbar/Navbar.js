@@ -82,7 +82,7 @@ const Navbar = () => {
           >
             <List className={classes.list}>
               <ListItem>
-                <Link to="/" className={classes.link}>
+                <Link to="/react-portfolio" className={classes.link}>
                   <Button 
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
@@ -97,7 +97,7 @@ const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link to="/portfolio" className={classes.link}>
+                <Link to="/react-portfolio/portfolio" className={classes.link}>
                   <Button 
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
@@ -112,7 +112,7 @@ const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link to="/contact" className={classes.link}>
+                <Link to="/react-portfolio/contact" className={classes.link}>
                   <Button 
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}

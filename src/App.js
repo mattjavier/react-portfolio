@@ -28,9 +28,9 @@ const App = () => {
           <CssBaseline />
           <Navbar />
           <Switch>
-            <Route exact path="/" component={About} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/contact" component={Contact} />
+            <Route exact path="/react-portfolio" component={About} />
+            <Route path="/react-portfolio/portfolio" component={Portfolio} />
+            <Route path="/react-portfolio/contact" component={Contact} />
           </Switch>
           <Footer />
         </div>
