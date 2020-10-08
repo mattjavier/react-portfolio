@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { CardContent, makeStyles } from '@material-ui/core'
 
 import clsx from 'clsx'
-import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Card from '@material-ui/core/Card'
@@ -11,7 +10,6 @@ import CardMedia from '@material-ui/core/CardMedia'
 import CardActions from '@material-ui/core/CardActions'
 import Typography from '@material-ui/core/Typography'
 import Collapse from '@material-ui/core/Collapse'
-import { ReportProblem } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
   image: {

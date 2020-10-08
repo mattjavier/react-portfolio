@@ -75,14 +75,14 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
           <Drawer
-            anchor="left"
+            anchor="top"
             open={openState.open}
             onClose={toggleDrawer(false)}
             classes={{ paper: classes.drawerPaper }}
           >
             <List className={classes.list}>
               <ListItem>
-                <Link to="/react-portfolio/" className={classes.link}>
+                <Link to="/" className={classes.link}>
                   <Button 
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
@@ -97,7 +97,7 @@ const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link to="/react-portfolio/portfolio" className={classes.link}>
+                <Link to="/portfolio" className={classes.link}>
                   <Button 
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
@@ -112,7 +112,7 @@ const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link to="/react-portfolio/contact" className={classes.link}>
+                <Link to="/contact" className={classes.link}>
                   <Button 
                     className={classes.linkText}
                     onClick={toggleDrawer(false)}
