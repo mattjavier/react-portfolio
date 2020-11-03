@@ -53,7 +53,7 @@ const AboutTabs = () => {
             About Me
           </Typography>
           <Typography variant="body2">
-            I am currently a student at the UCI Coding Boot Camp, learning to be a full-stack developer.
+          Full Stack Web Developer. Previous experience with both static and dynamic websites, building MERN applications using RESTful routing. Effective at working collaboratively in a demanding environment with a team, having developed multiple applications taking on a leadership role. Looking to use acquired skills in both Computer Science and Web Development to build larger-scale, user-oriented applications.
           </Typography>
         </CardContent>
       </Card>
@@ -67,7 +67,7 @@ const AboutTabs = () => {
             Education
           </Typography>
           <Typography variant="body2">
-            I attended the University of California at Irvine from 2015-2019, graduating with a B.S. in Computer Science.
+            I attended the University of California at Irvine from 2015-2019, graduating with a B.S. in Computer Science. I also attended the UCI Coding Boot Camp for Full Stack Development in 2020.
           </Typography>
         </CardContent>
       </Card>
@@ -123,7 +123,42 @@ const AboutTabs = () => {
             />
             <Chip 
               size="small" 
-              label="React"
+              label="React.js"
+              className={classes.icons}
+            />
+            <Chip 
+              size="small" 
+              label="Express"
+              className={classes.icons}
+            />
+            <Chip 
+              size="small" 
+              label="MongoDB"
+              className={classes.icons}
+            />
+            <Chip 
+              size="small" 
+              label="jQuery"
+              className={classes.icons}
+            />
+            <Chip 
+              size="small" 
+              label="AJAX"
+              className={classes.icons}
+            />
+            <Chip 
+              size="small" 
+              label="REST"
+              className={classes.icons}
+            />
+            <Chip 
+              size="small" 
+              label="Bootstrap"
+              className={classes.icons}
+            />
+            <Chip 
+              size="small" 
+              label="Material-UI"
               className={classes.icons}
             />
           </div>
@@ -132,7 +167,7 @@ const AboutTabs = () => {
             Click&nbsp;
             <span> 
               <a
-                href="https://drive.google.com/file/d/1t5EBD31wOHBL8bLZCW9uPdM0iAqSTSOx/view?usp=sharing"
+                href="https://drive.google.com/file/d/1GFVZv97tVmxrim3JziA-r4oEv2_Wamdm/view?usp=sharing"
                 target="_blank"
                 rel="nopener noreferrer"
                 className={classes.alternate}
